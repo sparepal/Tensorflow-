@@ -1,0 +1,3 @@
+Wiki main page- https://dumps.wikimedia.org/simplewiki/20180220/simplewiki-20180220-pages-articles-multistream.xml.bz2 
+This file runs the word2vec on the bz2 file to preprocess and clean the text to remove wikipedia special tags and extract tokens properly.
+Uses gensim for preprocessing only and tensorflow for training and computes the cosine similarity between words in the old set(Wiki main page), and in the new.
