@@ -55,10 +55,3 @@ def load_split_scale_data(train_fn='sign_mnist_train.csv',test_fn='sign_mnist_te
     y_train = onehotencoder.fit_transform(y_train.reshape(-1,1)).toarray()
 
     return hs(Train(X_train,y_train),Test(X_test,y_test))
-
-
-
-
-
-
-
