@@ -54,6 +54,7 @@ with tf.Session() as sess:
     Z = logits.eval(feed_dict={X: X_new_scaled}) 
     y_pred = np.argmax(Z, axis=1)
 #-----------------------------------------------------------------------------------------#
+#please download the data into the working directory from this link https://www.kaggle.com/sachinpatel21/az-handwritten-alphabets-in-csv-format
 import pandas as pd
 dataset=pd.read_csv('A_Z HandwrittenData.csv')
         
